@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  height: 1950px;
+  scroll-behavior: smooth;
+}
+
+/* Struktur start */
+.struktur,
+.panduan,
+.tatib,
+.faq {
+  margin: 120px 50px;
+  align-items: center;
+  font-family: "Jua", sans-serif;
+}
+
+.struktur .content h1 {
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.struktur img {
+  margin-top: 25px;
+  margin-left: 250px;
+}
+/* Struktur end */
+
+/* Panduan start */
+.panduan h1 {
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.panduan .list {
+  font-family: "Poppins";
+  max-width: 19rem;
+  margin: 0 50px;
+}
+/* Panduan end */
+
+/* tatib start */
+.tatib h1 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.tatib .isi {
+  font-family: "Poppins";
+  padding: 20px 50px;
+}
+/* tatib end */
+
+/* faq start */
+
+.faq .head {
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+.faq .nanyea {
+  margin-left: 50px;
+}
+
+.faq .nanyea h1 {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.faq .nanyea p {
+  font-family: "Poppins";
+}
+/* faq end */

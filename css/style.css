@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
+
+:root {
+  --primary: #1c6dd0;
+  --bg: #fff;
+  --secondary: #91c8e4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Navbar start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 4%;
+  background-color: var(--bg);
+  border-bottom: 2px solid #d2cece;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--secondary);
+}
+
+.navbar .navbar-nav a,
+.logout {
+  font-size: 1rem;
+  margin: 0 1.3rem;
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.navbar .navbar-nav .logout {
+  background-color: #1c6dd0;
+  color: #fff;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 10px;
+  box-shadow: 1px, 1px, 3px, rgba(239, 239, 239, 0);
+}
+
+.navbar .navbar-nav .logout .log {
+  color: #fff;
+  font-size: smaller;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--secondary);
+  transition: 0.5s;
+}
+/* Navbar end */
+
+/* Hero section start */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(176, 187, 223) 8%,
+    rgba(239, 239, 239, 0) 50%
+  );
+}
+
+.hero .content {
+  padding: 1rem 7%;
+  max-width: 60rem;
+  margin: auto;
+}
+
+.hero .content h1 {
+  font-size: 4em;
+  color: var(--primary);
+  text-shadow: 1px 1px 3px rgba(239, 239, 239, 0);
+  line-height: 1.2;
+  font-style: italic;
+  margin-left: 30%;
+}
+
+.hero .content h1 span {
+  color: var(--secondary);
+}
+
+.hero .content p {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(239, 239, 239, 0);
+  text-align: center;
+  color: #000000;
+}
+/* Hero section end */
+
+/* Section 2 start */
+.sec2 {
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec2 .content h1 {
+  font-family: "Jua";
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.sec2 .content p {
+  max-width: 250px;
+}
+/* Section 2 end */
+
+/* Section 3 start */
+.sec3 {
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.sec3 .content h1 {
+  font-family: "Jua";
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Section 3 end */
